@@ -1,0 +1,35 @@
+.header {
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2% 0;
+    }
+
+
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logo {
+    max-width: 74px;
+}
+
+.contact-btn {
+    color: #fff;
+    background: #021747;
+    padding: 11px 12px;
+    transition: 0.2s;
+}
+
+.contact-btn:hover {
+    transform: rotate(-5deg);
+}
+
+.contact-btn:active {
+    transform: scale(0.92);
+}

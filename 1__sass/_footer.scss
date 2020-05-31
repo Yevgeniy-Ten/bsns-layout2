@@ -1,0 +1,72 @@
+.footer {
+    position: relative;
+    border-top: 1px solid #D5DAE6;
+
+    &__decor {
+        display: none;
+        position: absolute;
+        background: url(../design/man-ic.png) no-repeat center /contain;
+        right: 7%;
+        top: -68%;
+        width: 10%;
+        height: 100%;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 36%;
+            right: 22%;
+            width: 40%;
+            height: 50%;
+            z-index: -1;
+            background: url(../design/mancloak-ic.png) no-repeat center / 100% 100%;
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6% 0;
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        padding: 10px 0;
+        font-size: 12px;
+        line-height: 16px;
+        background: #00091D;
+        text-align: center;
+        display: block;
+        color: #FFFFFF;
+    }
+}
+
+.soclinks {
+    padding: 20px 0;
+    margin: 0 15px 0 0;
+
+    &__soclink {
+        color: #021747;
+        margin: 5px 5px 5px 0;
+        line-height: 28px;
+        padding: 5px 0 5px 28px;
+        margin: 0 0 0 20px;
+    }
+
+    &__soclink:hover {
+        text-decoration: underline;
+    }
+
+    &__soclink--wifi {
+        background: url(../design/wifi-ic.svg) no-repeat left center / 18px;
+    }
+
+    &__soclink--inst {
+        background: url(../design/inst-ic.svg) no-repeat left center / 18px;
+    }
+
+    &__soclink--inn {
+        background: url(../design/in-ic.svg) no-repeat left center / 18px;
+    }
+}

@@ -1,0 +1,124 @@
+@media (max-width: $md1+px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: $md1+px) {
+    .container {
+        max-width: 970px;
+    }
+
+    .footer__decor {
+        display: block;
+    }
+}
+
+@media (max-width: $md2+px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: $md3+px) {
+    .content__wrap {
+        padding: 0 6%;
+    }
+
+    .footer__body {
+        padding: 4% 6%;
+    }
+
+    .menu {
+        position: fixed;
+        padding: 8px 9%;
+        width: 200px;
+        top: 0;
+        right: 0;
+        box-sizing: content-box;
+        border-top: 1px solid #6f7e9e;
+        box-shadow: 0 0 3px #6f7e9e;
+        transform-origin: bottom right;
+        transform: translatey(-100%) rotate(-90deg);
+        z-index: 3;
+        transition: 0.2s ease-in;
+
+        &__title {
+            display: block;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 32px;
+            text-align: right;
+            text-transform: uppercase;
+            color: rgb(200, 208, 226);
+            display: inline-block;
+            transform: rotateX(180deg) rotateY(-180deg);
+            transition: 0.3s;
+            user-select: none;
+            cursor: pointer;
+        }
+    }
+
+    .menu.menu--active {
+        transform: translatey(0%) rotate(0deg);
+        border-top: none;
+        border-bottom: 1px solid #6f7e9e;
+
+        .menu__title {
+            transform: rotateX(0deg) rotateY(0deg);
+            color: #021747;
+        }
+
+        .burger-menu {
+            transform: rotate(0deg);
+        }
+    }
+
+    .burger-menu.menu--active~.menu__items {
+        transition: 0.3s 0.35s;
+        top: 100%;
+        margin-top: 0;
+    }
+
+    .burger-menu {
+        transform: rotate(90deg);
+    }
+
+    .burger-menu.menu--active {
+        transform: rotate(0deg);
+    }
+}
+
+@media (min-width: $md4+px) {
+    .content__imgs {
+        grid-template-columns: repeat(2, minmax(225px, 1fr));
+    }
+
+    .contact-form__inputs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-form__input:last-child {
+        grid-column: 1/3;
+    }
+
+    .contact-form__btn {
+        width: 40%;
+        align-self: center;
+    }
+
+    .footer__body {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: $md3+px) {
+    .container {
+        max-width: none;
+        padding: 0 10px;
+    }
+
+    .header {
+        border-bottom: 2px solid #6F7E9E;
+    }
+}
